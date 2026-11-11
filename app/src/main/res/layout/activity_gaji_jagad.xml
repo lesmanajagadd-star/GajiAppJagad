@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FORM GAJI KARYAWAN" android:textStyle="bold" android:textSize="20sp" android:layout_gravity="center" android:layout_marginBottom="20dp"/>
+
+        <!-- INPUT -->
+        <EditText android:id="@+id/inputNikJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nomor Induk Karyawan" android:inputType="number"/>
+        <EditText android:id="@+id/inputNamaJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Karyawan" android:inputType="textPersonName"/>
+        <EditText android:id="@+id/inputGajiPokokJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gaji Pokok (Rp)" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/inputTunjanganJabJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tunjangan Jabatan (Rp)" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/inputHariKerjaJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Jumlah Hari Kerja" android:inputType="number"/>
+
+        <!-- TOMBOL HITUNG -->
+        <Button android:id="@+id/btnHitungJagad" android:layout_width="match_parent" android:layout_height="60dp" android:text="HITUNG GAJI" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+
+        <!-- OUTPUT -->
+        <TextView android:id="@+id/outTunjanganMakanJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tunjangan Makan: " android:textSize="16sp"/>
+        <TextView android:id="@+id/outTunjanganTransportJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tunjangan Transportasi: " android:textSize="16sp"/>
+        <TextView android:id="@+id/outGajiKotorJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gaji Kotor: " android:textSize="16sp"/>
+        <TextView android:id="@+id/outGajiBersihJagad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gaji Bersih: " android:textStyle="bold" android:textSize="18sp" android:textColor="#2E7D32"/>
+
+    </LinearLayout>
+</ScrollView>
